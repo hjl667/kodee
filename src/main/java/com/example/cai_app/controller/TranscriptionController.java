@@ -5,6 +5,7 @@ import com.example.cai_app.model.Transcription;
 import com.example.cai_app.repository.TranscriptionRepository;
 import com.example.cai_app.service.TranscriptionService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -37,6 +38,15 @@ public class TranscriptionController {
     public String deleteGlossaryByName(@PathVariable String transcriptionName){
         transcriptionService.deleteTranscriptionByName(transcriptionName);
         return "Glossary deleted successfully";
+    }
+
+    @GetMapping("/translate")
+    public ResponseEntity<String> translate(
+            @RequestParam String selectedTranscription,
+            @RequestParam String language) {
+
+        String translation = transcriptionService.translate(selectedTranscription, language);
+        return ResponseEntity.ok(translation);
     }
 
 
