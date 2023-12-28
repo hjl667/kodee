@@ -3,11 +3,9 @@ package com.example.cai_app.model;
 import com.fasterxml.jackson.annotation.JsonBackReference;
 import com.fasterxml.jackson.annotation.JsonIdentityInfo;
 import com.fasterxml.jackson.annotation.ObjectIdGenerators;
-import lombok.Getter;
 
 import javax.persistence.*;
 
-@Getter
 @JsonIdentityInfo(
         generator = ObjectIdGenerators.PropertyGenerator.class,
         property = "id")
@@ -58,6 +56,22 @@ public class Term {
 
     public void setEnglishTerm(String englishTerm) {
         EnglishTerm = englishTerm;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public String getChineseTerm() {
+        return ChineseTerm;
+    }
+
+    public String getEnglishTerm() {
+        return EnglishTerm;
+    }
+
+    public Glossary getGlossary() {
+        return glossary;
     }
 
     @Override
