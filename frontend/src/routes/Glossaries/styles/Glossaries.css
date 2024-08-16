@@ -1,0 +1,108 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: ghostwhite;
+}
+
+.inputSelectContainer {
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+/* style the SearchTools */
+.inputSelectContainer input, .inputSelectContainer select, .inputSelectContainer .Button, .inputSelectContainer .deleteButton {
+    /* Common Styles for all elements */
+    padding: 2px;
+    width: 25%;
+    font-size: 14px;
+    outline: none;
+    box-sizing: border-box; /* to include padding in width */
+}
+
+.inputSelectContainer input {
+    /* Styles specific to the input box */
+    width: 45%;
+    background-color: ghostwhite;
+    color: black;
+    margin-right: 10px;
+    border: 1px solid lightgray; /* Opaque light grey border */
+}
+
+.inputSelectContainer select {
+    /* Styles specific to the select box */
+    width: 16%;
+    margin-right: 10px;
+    color: #ffffff;
+    background-color: #000000;
+    border-radius: 5px;
+}
+
+.inputSelectContainer .Button, .inputSelectContainer .deleteButton {
+    /* Styles specific to the buttons */
+    width: 10%;
+    color: #000000;
+    background-color: ghostwhite;
+    cursor: pointer;
+    border: 1px solid #000000;
+    margin-right: 5px;
+}
+
+/* Hover effect */
+.inputSelectContainer .Button:hover,
+.inputSelectContainer .deleteButton:hover {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+/* style the public glossary container */
+.scrollContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Creates a grid with 4 columns */
+    grid-gap: 10px; /* Sets the size of the gap between grid cells */
+    height: 140px;  /* Set a specific height or adjust as needed */
+    overflow-y: auto;  /* Enables vertical scrolling */
+    margin-bottom: 20px;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 20px; /* Adding some horizontal padding */
+}
+
+/* style user glossaries */
+.gridContainer {
+    margin-top: 10px;
+    margin-bottom: 40px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Creates a grid with 4 columns of equal width */
+    grid-gap: 10px; /* Sets the size of the gap between grid cells */
+    width: 100%; /* Adjusted to 100% */
+    box-sizing: border-box;
+    padding: 0 20px; /* Adding some horizontal padding */
+}
+
+#secondGrid {
+    margin-bottom: 140px; /* Adjust this value as needed */
+}
+
+
+/* style icon and text */
+#glossaryText {
+    margin-top: 15px;
+    font-size: 12px; /* Replace with the size you want */
+}
+
+.faBook path {
+    fill: none !important;
+    stroke: black !important;
+}
+
+.glossary {
+    display: flex;
+    flex-direction: column; /* Aligns items vertically */
+    justify-content: center; /* Centers items vertically */
+    align-items: center; /* Centers items horizontally */
+    border: none; /* Adds a border around each glossary item */
+    padding: 20px; /* Adds some space inside each glossary item */
+    background-color: ghostwhite; /* Adjust as needed */
+    border-radius: 5px; /* Adds rounded corners to each glossary item */
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+}

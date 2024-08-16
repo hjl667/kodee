@@ -1,0 +1,186 @@
+.glossaryForm {
+    position: fixed;
+    top: 10%; /* 100% - 80% = 20%, divided by 2 (for top and bottom) = 10% */
+    left: 10%; /* assuming you also want it to take up 80% horizontally */
+    width: 80%;
+    height: 80%;
+    padding: 20px;
+    background-color: #fff; /* or whatever color you prefer */
+    overflow-y: auto; /* in case your content exceeds the form's height */
+    z-index: 1000; /* to make sure it's over everything else */
+    border: none;
+}
+
+
+.formContainer {
+    width: 80%;
+    box-sizing: border-box;
+    margin: 50px auto 0; /* 50px top margin */
+}
+
+.glossaryForm h3 {
+    font-size: 27px;
+    font-family: Impact, sans-serif;
+    margin-bottom: 10px;
+}
+
+
+.formHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 35px;
+    margin-bottom: 40px;
+    width: 90%;
+}
+
+.headerText {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 50%;
+}
+
+.headerButtons {
+    display: flex;
+    justify-content: flex-end;
+    width: 50%;
+}
+
+.headerButtons button {
+    margin-left: 13px;
+}
+
+.formHeader p {
+    width: 70%;
+}
+
+.formHeader button {
+    /* Styles specific to the buttons */
+    width: 25%;
+    font-size: 11px;
+    transition-duration: 0.4s;
+    border-radius: 5px;
+    font-weight: bold;
+    border: 1px solid #000000; /* Black border */
+    background-color: white;
+    padding: 5px;
+}
+
+.formHeader button:hover {
+    background-color: black;
+    color: white;
+}
+
+.glossaryForm table {
+    width: 100%;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+.glossaryForm th, .glossaryForm td {
+    border-bottom: 1px dashed lightgrey;
+    padding: 8px;
+}
+
+.glossaryForm textarea {
+    width: 100%;
+    height: 367px;
+    padding: 25px 6%; /* 10px top/bottom padding, and 20% left/right padding */
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    resize: none; /* Disables the ability for the user to resize the textarea */
+    font-size: 14px;
+    line-height: 1.5;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+.glossaryInput {
+    margin-left: 20px;
+    border: none; /* This removes the whole border */
+    border-bottom: 1px dashed #000;
+}
+
+
+.formContainer {
+    width: 80%; /* Adjust this to match your form width */
+    margin: auto; /* Center the form */
+}
+
+.inputFields, .buttonContainer {
+    width: 100%; /* Ensures inputs and buttons take up the full width of the form */
+}
+
+.termTable {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.addNewTermButton {
+    background-color: black; /* Green */
+    color: white;
+    border: none;
+    padding: 4px 0px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    margin: 3px 2px;
+    margin-top: 20px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    width: 100px;
+}
+
+.browseButton {
+    background-color: black; /* Blue */
+    color: white;
+    border: none;
+    padding: 3px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+
+.fileUploadButton, .glossaryFormSubmitButton {
+    background-color: white;
+    color: black;
+    padding: 2px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 11px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border: 2px solid black;
+}
+
+.fileUploadButton:hover, .glossaryFormSubmitButton:hover {
+    background-color: black;
+    color: white;
+}
+
+
+/*delete form styles*/
+.deleteForm {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    max-width: 500px;
+    width: 80%;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.deleteFormInput {
+    margin-left: 20px;
+    border: none; /* This removes the whole border */
+    border-bottom: 1px dashed #000;
+    margin-right: 20px;
+}

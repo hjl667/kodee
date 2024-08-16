@@ -1,0 +1,188 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: ghostwhite; /* Set the light grey background color */
+}
+
+.transcriptionPanel {
+    margin-top: 30px;
+    height: 50vh;
+    width: 100%;
+    background-color: ghostwhite;
+    padding: 20px; /* Adjust this to fit your needs */
+    color: black; /* Sets default text color to black */
+    box-sizing: border-box;
+    position: relative;
+}
+
+textarea {
+    flex-grow: 1; /* Make the textarea take the remaining space in the .transcriptionPanel */
+    background-color: ghostwhite;
+    color: black; /* Sets text color to black */
+    padding: 35px; /* Adjust this to fit your needs */
+    width: 100%; /* Makes the textarea take the full width of the parent container */
+    height: 90%;
+    box-sizing: border-box;
+    border: none; /* Remove the textarea border */
+    resize: none;
+}
+
+.TopquoteIcon,
+.quoteIcon {
+    position: absolute;
+    color: black; /* Sets text color to black */
+    font-size: 3rem; /* Adjust the font size to your liking */
+}
+
+.TopquoteIcon {
+    top: 10px; /* Position the top quote icon at the top of the transcription panel */
+    transform: translateX(-50%); /* Center the top quote icon horizontally */
+}
+
+.quoteIcon {
+    bottom: 10px; /* Position the bottom quote icon at the bottom of the transcription panel */
+    right: 10px; /* Position the quote icon on the right */
+    cursor: pointer; /* Changes cursor to pointer when hovering over the quote icon */
+    margin-bottom: 15px;
+}
+
+
+.styled-table {
+    border-collapse: collapse;
+    width: 100%; /* Adjust to your preference */
+}
+
+.styled-table td {
+    border-bottom: 1px solid dimgray;
+    padding: 10px;
+    width: 280px; /* Or whatever width you prefer */
+}
+
+.styled-table tr {
+    height: 48px; /* Adjust this value to make each row taller */
+}
+
+.prompts-header {
+    font-size: 35px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    font-family: Impact, sans-serif;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Add a subtle text shadow */
+}
+
+.subtitle {
+    font-size: 10px;
+    margin-bottom: 25px;
+    font-family: Chalkduster, sans-serif;
+}
+
+/*style language slect and start button*/
+
+.select-button-container {
+    margin-top: 40px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between; /* This will put some space between the select box and the button */
+    align-items: center; /* This will vertically align the select box and the button */
+    width: 200px; /* Set this to whatever value you want */
+}
+
+.select-button-container select, .select-button-container button {
+    /* Common Styles for the select box and the button */
+    padding: 2px;
+    width: 90px; /* Make them equal width */
+    font-size: 14px;
+    outline: none;
+}
+
+.select-button-container select {
+    /* Styles specific to the select box */
+    color: #ffffff; /* white text */
+    background-color: #000000; /* black background */
+}
+
+.select-button-container button {
+    /* Styles specific to the button */
+    color: #000000; /* black text */
+    background-color: ghostwhite; /* white background */
+    cursor: pointer;
+    border: 1px solid #000000;
+}
+
+.select-button-container button:hover{
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.inputGroup {
+    margin-top: 10px;
+    margin-right: 18px;
+}
+
+/* CSS for the form container */
+.uploadForm {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    width: 90%;
+}
+
+/* CSS for the form header */
+.formHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+/* CSS for the close button */
+.closeButton {
+    background-color: #000;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+/* CSS for the input fields */
+.transcriptionNameInput,
+.transcriptionContentTextarea {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 15px;
+    border: none;           /* Resetting any existing borders */
+    border-bottom: 1px dotted #000; /* Setting only the bottom border as dotted */
+    border-radius: 3px;
+    resize: vertical;
+}
+
+/* CSS for the submit button */
+.submit {
+    background-color: white;
+    color: black;
+    padding: 5px 5px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.submit:hover{
+    background-color: #000000;
+    color: #ffffff;
+}
+
+
+/* CSS to remove default styles */
+form {
+    margin: 0;
+    padding: 0;
+}
+
+h3 {
+    margin: 0;
+    font-family: Impact, sans-serif;
+}

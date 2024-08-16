@@ -1,0 +1,71 @@
+.blank {
+    margin-top: 12px;
+    color: ghostwhite;
+}
+
+.blank2 {
+    margin-top: 8px;
+    color: ghostwhite;
+}
+
+.blank3 {
+    margin-top: 85px;
+    color: ghostwhite;
+}
+
+.blank4 {
+    margin-top: 4px;
+    color: ghostwhite;
+}
+
+.blank5 {
+    margin-top: 1px;
+    color: ghostwhite;
+}
+
+.sub {
+    font-family: Chalkduster, sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.audioImg {
+    margin-top: 10px;
+    width: 70%;
+}
+
+.ResourceContainer {
+    margin-top: 15px;
+}
+
+.download-buttons {
+    margin-bottom: 10px;
+}
+
+.FileDownload {
+    margin-right: 10px;
+    font-size: 11px;
+    color: #000000; /* black text */
+    background-color: ghostwhite; /* white background */
+    padding: 3px;
+    cursor: pointer;
+    border: 1px solid #000000;
+}
+
+.FileDownload:hover{
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.website-links {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;  /* Adjust this value to the desired gap */
+}
+
+.website-links a {
+    color: black;
+    font-size: 13px;
+}
+

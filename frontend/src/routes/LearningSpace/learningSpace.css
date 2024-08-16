@@ -1,0 +1,57 @@
+.selectContainer {
+    display: flex;
+    justify-content: space-between; /* This will put some space between the select box and the button */
+    align-items: center; /* This will vertically align the select box and the button */
+    width: 52%; /* Set this to whatever value you want */
+    margin-bottom: 30px;
+}
+
+.transcriptionsSelect, .LanguageSelect {
+    padding: 2px;
+    width: 90px; /* Make them equal width */
+    font-size: 14px;
+    outline: none;
+}
+
+.transcriptionsSelect {
+    width: 60%;
+    background-color: ghostwhite;
+    color: black;
+    border-radius: 6px;
+}
+
+.LanguageSelect {
+    /* Styles specific to the select box */
+    color: #ffffff; /* white text */
+    background-color: #000000; /* black background */
+    border-radius: 8px;
+}
+
+/* Base styles for both textareas */
+.transcriptionBox, .translation {
+    width: 100%;              /* Full width of parent container */
+    padding: 20px;            /* Padding inside the textarea */
+    font-size: 16px;          /* Font size */
+    border: 1px solid lightgrey;  /* Black border */
+    margin-top: 12px;         /* Space at the top for separation */
+    resize: vertical;         /* Allow only vertical resizing */
+    background-color: ghostwhite;   /* White background */
+    color: black;             /* Black text color */
+    transition: border-color 0.3s; /* Smooth transition for hover effect */
+    border-radius: 15px;
+    height: 160px;
+
+}
+
+/* Hover effect - Change border color on hover */
+.transcriptionBox:hover, .translation:hover {
+    border-color: #888;       /* Darker grey border on hover */
+}
+
+/* If you want to distinguish between the two textareas, you can add specific styles.
+   For instance, let's make the translation box have a dotted border: */
+
+.translation {
+    border-style: dotted;
+    margin-bottom: 40px;
+}

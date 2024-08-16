@@ -1,0 +1,106 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: ghostwhite; /* Set the light grey background color */
+}
+
+.homeContainer {
+    text-align: center;  /* Centers the text and buttons */
+}
+
+.homeLogo {
+    width: 45vw;  /* This sets the width to be 60% of the viewport width */
+    display: block;  /* This makes the image a block element, which allows it to be centered using auto margins */
+    margin-left: auto;  /* These two lines center the image */
+    margin-right: auto;
+}
+
+
+
+.buttonGroup {
+    display: inline-flex;  /* Displays the buttons inline */
+    justify-content: center;  /* Centers the buttons horizontally */
+    gap: 30px;  /* This creates some space between the buttons */
+    width: 450px;
+    margin-top: 30px;
+    margin-bottom: 100px;
+}
+
+.homeButton {
+    background-color: ghostwhite;
+    color: #000000;
+    border: 1px solid #000000;
+
+    cursor: pointer;
+    padding: 2px 20px;
+    /* remove or adjust this line for less/more rounded corners */
+    border-radius: 0; /* This will give you sharp corners */
+}
+
+.homeButton:hover {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loginForm {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    position: relative;
+}
+
+.loginTitle {
+    font-family: Impact, sans-serif;
+    font-size: 35px;
+    margin-bottom: 45px;
+}
+
+.closeButton {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.inputGroup {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.inputGroup label {
+    margin-right: 10px;
+}
+
+.LogButton {
+    background-color: white;
+    color: #000000;
+    border: 1px solid #000000;
+    margin-top: 30px;
+    cursor: pointer;
+    padding: 2px 20px;
+    /* remove or adjust this line for less/more rounded corners */
+    border-radius: 0; /* This will give you sharp corners */
+}
+
+.LogButton:hover {
+
+    background-color: #000000;
+    color: #ffffff;
+}
+
+
