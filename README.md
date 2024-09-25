@@ -1,45 +1,81 @@
-# Kodee, a language service provider
+# Kodee 话题口语学习的最佳工具：
 
-[Kodee](https://kodeeinc.com) is an independent open-source project that aims to be the best AI-powered language assistant for conference interpreters and more.
+[Kodee](https://kodee.io)是我用业余时间自己做的一个产品，是基于我自己学习语言的体会，以及在上外CI读书是学到的东西。
+希望能够给有口语练习需求的人一些帮助。因为时间，资源和能力方面的限制，kodee满足的是一类垂直的需求，如果是希望练习日常口语的朋友，推荐直接和chatgpt对话。
 
-Core functions for now are as follows:
-- real-time transcription
-- terminology prompt
-- glossary management
-- community
+kodee的设计是以要复述这个语言练习方式展开的，通过选择在复述前看到不同的内容，来进行不同侧重点的练习。
 
-To know more about me, please visit [my personal page](https://liu6-66.github.io/personal_page/)
+（1）提高口语：可以看和听英文参考版，差不多知道可以怎么说了再开始复述
+（2）练习口译：可以看和听中文参考版和terms中英对照，然后开始复述
 
-## Usage
+目前kodee已经有1000名注册用户，而且还在快速增长中。希望大家在使用的同时，能够在B站和小红书多给我一些反馈，让我多一些坚持做下去的动力。
 
-[Kodee](https://kodeeinc.com) is deployed at aws EC2 and accessible at https://kodeeinc.com. It is best viewed on a Mac Laptop because its UI is tailored for the Mac system(To be updated). Watch this [demo](https://drive.google.com/file/d/1xWksOjN058cjTUgIwNw4-Ot2cYEClY_9/view?usp=drive_link) for a how-to demonstration.
+产品使用中还有各种小bug，希望大家多体谅，比如说老的浏览器打开repository页面可能会有“application error”的报错。需要问题可以先尝试刷新，或者换浏览器。
 
-Alternatively, you can run this Spring Boot backend locally by running the CaiAppApplication file to for the endpoints to become available. Please remember to provide your own credentials for connecting to a Postgres database.
+注： 这个repo里面的代码是第一版kodee的前后端，实现的是同传工作时，术语提示的功能。
 
-```java
-spring.datasource.url=jdbc:postgresql://     
-spring.datasource.username =
-spring.datasource.password = 
-```
+## 用户画像：
+- 最最最符合我设计产品初衷的三类用户：
+- （1）小a，大学学生，学习计算机/金融/法律/工科等，希望能够用英语讲专业知识讲得清除，明白，因为希望出国读书/作英语学术汇报/单纯提高能力等。
+- （2）小b, 准备雅思托福口语，但是又不希望准备过程过于应试，想同时真正提高自己的口语水平。
+- （3）小c, 口译学生，想要练习cn-en无笔记附属，提高英文输出的有效性。
 
-And install the following dependency
+- 因此可以看出，使用还是有一定门槛的，需要有一定英语基础，比如四六级，或者雅思6+水平。
+- 另外，需要认同kodee的设计理念：学英语在于高效表达，而不是词汇背诵，和词藻堆砌。
+- 对于还在起步阶段的朋友，可以找些优秀的资源，先解决下发音，基本词汇和语法的问题。
 
-```bash
+## 使用说明：
+- kodee只供个人使用，严谨商用。
+- 目前前后端，算法，ui，运营等都是我一个人在业余时间在做，同时产品使用中消耗的各种资源，也是我自己在承担，因此如果大家觉得kodee有用，希望他可以维系更长时间，可以自愿捐助。
+- 如果有一天，因为时间或者成本原因，kodee难以为继了，我会选择把所有代码开源出来，供个人使用，但严谨商用。
+
+## 使用流程：
+- 进入kodee之后就会看到以下界面，新用户首先需要注册登陆，基本上所有的功能都需要注册状态才能使用。
+- 注册后可以在输入输入想要练习的话题，再点击右边类似播放键的按钮开始生成文字部分。
+- 比如说我生成一篇关于elasticsearch的文章
+- 输入栏下面的话题点击可以直接进入对应演讲的练习界面，但是注意这些内容只有中文语音。
+  
+![生成页面](assets/home.png)
 
 
-```
+- 文章生成完成后，就会进入repository页面，下拉或者搜索找到刚刚生成的演讲，如下图所示。
+- 左上角如果显示private,表示只显示自己生成的文章，点击之后会显示all topics，表示显示自己生成的文章+预设的文章。
+- 对于一篇新生成的内容，如下图所示，可以选择英语和中文，然后点击右边的按钮生成对应的语音，生成中会显示"speech is being created"。
+
+![演讲页面](assets/speech.png)
+
+- 短的内容差不多40秒左右能生成完成，需要刷新可以看到，如下图所示。
+- 这个时候点击标题，就可以进入这篇内容的练习界面。
+  
+![演讲页面](assets/speech_audio.png)
+
+- 如下图所示，在每个话题的练习界面，可以选择听中文/英文语音，看terms的中英文对照，文章的提纲，全文，以及对应的简洁高效英文版本。
+- 如上所述，基于自己的练习目的，在复述前，可以选择看不同的东西。
+- 在当前版本下，每个话题内容生成语音，只能在中文和英文中二选一，无法同时生成。
+  
+![演讲页面](assets/practice.png)
 
 
-## Demo
-![landing page](assets/kodeedemo.jpg)
+- 在开始复述的时候，可以点击下图所示start按键，开始转录。
+- 转录结束点击箭头，切换到转录内容，点击右下角按键，稍等片刻，获得反馈。
+- 这里有一个小bug,转录出来的内容是不可编辑的，但是这也不会影响获取反馈的质量
+  
+![演讲页面](assets/transcription.png)
 
-- the terminology prompt page from Kodee.
-- please watch the [demo](https://drive.google.com/file/d/1xWksOjN058cjTUgIwNw4-Ot2cYEClY_9/view?usp=drive_link) for a how-to demonstration.
-  for more instructions or give it a try at [link](https://kodeeinc.com). 
+- 反馈准备好后，会进入如下图所示反馈界面
+- 这里可以看到原文，示范，信息缺失分析，精简优化表达，话题词汇，以及后续问题
+- 一般口语提高需求可以忽略信息缺失分析部分
+- 后续问题可以拿来生成新的文章，来加深对这一话题的了解
+  
+![演讲页面](assets/feedback.png)
 
-## Roadmap
+  
+## FAQ
+- ...
+- ...
 
-- enhance the real-time transcription module
+## 后续更新：
+
 - ...
 - ...
 - ...
