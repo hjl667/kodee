@@ -1,0 +1,83 @@
+{
+  "name": "react-sidebar-v6.4-yt",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@arco-design/web-react": "^2.64.0",
+    "@emotion/react": "^11.13.0",
+    "@emotion/styled": "^11.13.0",
+    "@fortawesome/free-solid-svg-icons": "^6.6.0",
+    "@fortawesome/react-fontawesome": "^0.2.2",
+    "@mui/icons-material": "^5.14.3",
+    "@mui/lab": "^5.0.0-alpha.139",
+    "@mui/material": "^5.16.7",
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/user-event": "^13.5.0",
+    "axios": "^1.4.0",
+    "date-fns": "^3.6.0",
+    "html2pdf.js": "^0.10.2",
+    "jspdf": "^2.5.1",
+    "lucide-react": "^0.427.0",
+    "microsoft-cognitiveservices-speech-sdk": "^1.40.0",
+    "notistack": "^3.0.1",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-hooks-global-state": "^2.1.0",
+    "react-icons": "^4.6.0",
+    "react-markdown": "^9.0.1",
+    "react-modal": "^3.16.1",
+    "react-router": "^6.4.2",
+    "react-router-dom": "^6.14.1",
+    "react-scripts": "5.0.1",
+    "react-select": "^5.7.4",
+    "rehype-highlight": "^7.0.0",
+    "rehype-raw": "^7.0.0",
+    "rehype-stringify": "^10.0.1",
+    "remark": "^15.0.1",
+    "remark-breaks": "^4.0.0",
+    "remark-gfm": "^4.0.0",
+    "remark-html": "^16.0.1",
+    "remark-parse": "^11.0.0",
+    "remark-rehype": "^11.1.1",
+    "sockjs-client": "^1.6.1",
+    "stompjs": "^2.3.3",
+    "tailwind-merge": "^2.5.3",
+    "web-vitals": "^2.1.4",
+    "webstomp-client": "^1.2.6",
+    "xlsx": "^0.18.5"
+  },
+  "scripts": {
+    "start": "PORT=29786 react-scripts start",
+    "start-pc": "set PORT=29786 && react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "proxy": "http://localhost:8080",
+  "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
+    "@testing-library/react": "^16.0.0",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "https": "^1.0.0",
+    "tailwindcss": "^3.4.10"
+  }
+}

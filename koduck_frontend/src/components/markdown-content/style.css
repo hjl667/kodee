@@ -1,0 +1,114 @@
+p {
+    margin: 12px 0px;
+    line-height: 1.5;
+}
+/* Styles for ordered list (ol) */
+ol {
+    list-style: decimal; /* Decimal numbering */
+    margin: 16px 0; /* Top and bottom margin */
+    padding-left: 1.5em; /* Indentation */
+    color: #24292e; /* GitHub's text color */
+    font-size: 16px; /* Font size */
+    line-height: 1.5; /* Line height */
+}
+
+/* Styles for list items (li) */
+li {
+    margin-bottom: 6px; /* Space between list items */
+}
+
+/* Additional styles for nested lists */
+ol ol {
+    list-style-type: lower-alpha; /* Lowercase alphabet for nested lists */
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+/* GitHub-style code highlighting in lists */
+li code {
+    background-color: rgba(27, 31, 35, 0.05); /* Light gray background */
+    padding: 0.2em 0.4em; /* Padding around code */
+    margin: 0;
+    font-size: 85%; /* Slightly smaller font */
+    border-radius: 3px; /* Rounded corners */
+}
+
+/* Styles for unordered list (ul) */
+ul {
+    list-style-type: disc; /* Disc bullets */
+    margin: 16px 0; /* Top and bottom margin */
+    padding-left: 1.5em; /* Indentation */
+    color: #24292e; /* GitHub's text color */
+    font-size: 16px; /* Font size */
+    line-height: 1.5; /* Line height */
+}
+
+/* Styles for list items (li) */
+li {
+    margin-bottom: 6px; /* Space between list items */
+}
+
+/* Additional styles for nested lists */
+ul ul {
+    list-style-type: circle; /* Circle bullets for nested lists */
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+/* GitHub-style code highlighting in lists */
+li code {
+    background-color: rgba(27, 31, 35, 0.05); /* Light gray background */
+    padding: 0.2em 0.4em; /* Padding around code */
+    margin: 0;
+    font-size: 85%; /* Slightly smaller font */
+    border-radius: 3px; /* Rounded corners */
+}
+
+/* General styles for headers */
+h1, h2, h3, h4, h5, h6 {
+    color: #24292e; /* GitHub's text color */
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji"; /* GitHub's font family */
+    font-weight: 600; /* Semi-bold */
+    margin-top: 24px; /* Top margin */
+    margin-bottom: 16px; /* Bottom margin */
+}
+
+/* Specific styles for each header level */
+h1 {
+    font-size: 32px; /* Font size */
+    border-bottom: 1px solid #eaecef; /* Bottom border */
+    padding-bottom: 0.3em; /* Padding below text */
+}
+
+h2 {
+    font-size: 24px;
+    border-bottom: 1px solid #eaecef;
+    padding-bottom: 0.3em;
+}
+
+h3 {
+    font-size: 20px;
+}
+
+h4 {
+    font-size: 16px;
+}
+
+h5 {
+    font-size: 14px;
+}
+
+h6 {
+    font-size: 12px;
+}
+
+/* Additional styling for code elements within headers */
+h1 code, h2 code, h3 code, h4 code, h5 code, h6 code {
+    background-color: rgba(27, 31, 35, 0.05); /* Light gray background */
+    padding: 0.2em 0.4em; /* Padding around code */
+    margin: 0;
+    font-size: 85%; /* Slightly smaller font */
+    border-radius: 3px; /* Rounded corners */
+}
+
+background-color: #fff;
