@@ -1,64 +1,69 @@
-# Kodee 话题口语学习的最佳工具：
 
-[Kodee](https://kodee.io)是我用业余时间自己做的一个产品，结合了学习笔记和口语练习两个需求。因为时间，资源和能力方面的限制，kodee满足的是一类垂直的需求.
+# [kodee.io](https://kodee.io)
 
-## 用户画像：
-- 最最最符合我设计产品初衷的三类用户：
-- （1）小a，大学学生，学习计算机/金融/法律/工科等，希望能够用英语讲专业知识讲得清除，明白，因为希望出国读书/作英语学术汇报/单纯提高能力等。
-- （2）小b, 准备雅思托福口语，但是又不希望准备过程过于应试，想同时真正提高自己的口语水平。
+[![English](https://img.shields.io/badge/Language-English-red.svg)](README.md)
+[![中文](https://img.shields.io/badge/语言-中文-blue.svg)](README_CN.md)
 
-- 因此可以看出，使用还是有一定门槛的，需要有一定英语基础，比如四六级，或者雅思6+水平。
-- 另外，需要认同kodee的设计理念：学英语在于高效表达，而不是词汇背诵，和词藻堆砌。
-- 对于还在起步阶段的朋友，可以找些优秀的资源，先解决下发音，基本词汇和语法的问题。
+## Design Philosophy: A Copy of Your Brain
+With so many note-taking apps already available, why did I create another one? On one hand, I wanted to practice and have a side project that I could continuously improve. On the other hand, I felt I had some unique needs for note-taking that existing apps couldn't satisfy.
 
+One requirement I wanted to fulfill is that the things I write down should be something I've digested and organized myself, rather than just copying and pasting from ChatGPT with nice formatting, only to forget it in a few days.
 
-## 使用说明：
-- kodee只供个人使用，严禁商用。
+That's why the title says "a copy of your brain" - meaning that everything recorded inside is something you could explain to others, no matter how much time has passed.
 
-## 使用流程（待更新）：
-- 进入kodee之后就会看到以下界面，新用户首先需要注册登陆，基本上所有的功能都需要注册状态才能使用。
-- 注册后可以在输入输入想要练习的话题，再点击右边类似播放键的按钮开始生成文字部分。
-- 比如说我生成一篇关于elasticsearch的文章
-- 输入栏下面的话题点击可以直接进入对应演讲的练习界面，但是注意这些内容只有中文语音。
-  
-![生成页面](assets/home.png)
+I emphasize the process of personal organization and thinking because with AI available now, it's easy to create comprehensive-looking written reports. However, having your own thoughts and insights about a field and being able to articulate them clearly remains a relatively rare and difficult skill to develop.
 
+I believe learning should be a lifelong habit, not something you do for an exam and then forget. If it's the latter, the learning process becomes painful and doesn't yield much long-term benefit.
 
-- 文章生成完成后，就会进入repository页面，下拉或者搜索找到刚刚生成的演讲，如下图所示。
-- 左上角如果显示private,表示只显示自己生成的文章，点击之后会显示all topics，表示显示自己生成的文章+预设的文章。
-- 对于一篇新生成的内容，如下图所示，可以选择英语和中文，然后点击右边的按钮生成对应的语音，生成中会显示"speech is being created"。
+So with the goal clear, what's the implementation method? The kodee app implements two main functions.
 
-![演讲页面](assets/speech.png)
+The first is to work with topics as units, starting from fragmented small knowledge points and then organizing logic and establishing connections yourself. Everyone has probably experienced learning a new field from scratch. In such situations, many people might find an authoritative book/notes in that field and use that learning material's framework to study the new domain.
 
-- 短的内容差不多40秒左右能生成完成，需要刷新可以看到，如下图所示。
-- 这个时候点击标题，就可以进入这篇内容的练习界面。
-  
-![演讲页面](assets/speech_audio.png)
+But I think a more effective approach, or at least one I personally prefer, is to start with small topics/knowledge points that interest you, thoroughly understand these points first, then repeat this process. When you've understood enough, you can establish connections and organize frameworks yourself. I think this completely reversed logic better aligns with learning patterns and makes it easier to absorb, internalize, and explain to others.
 
-- 如下图所示，在每个话题的练习界面，可以选择听中文/英文语音，看terms的中英文对照，文章的提纲，全文，以及对应的简洁高效英文版本。
-- 如上所述，基于自己的练习目的，在复述前，可以选择看不同的东西。
-- 在当前版本下，每个话题内容生成语音，只能在中文和英文中二选一，无法同时生成。
-  
+So kodee supports quickly creating small topics, where users can organize their understanding of each topic, then use the created topics to create views - essentially establishing connections.
 
-- 在开始复述的时候，可以点击下图所示start按键，开始转录。
-- 转录结束点击箭头，切换到转录内容，点击右下角按键，稍等片刻，获得反馈。
-- 这里有一个小bug,转录出来的内容是不可编辑的，但是这也不会影响获取反馈的质量
-  
+The second function is ensuring that individual topics are thoroughly understood. First, there's a theoretical point: if understanding a topic requires understanding higher-level concepts, you need to clarify those first. Then ask more questions, like why certain tech stacks emerged, what problems they solve, what the solution approach is, what trade-offs exist, etc.
 
-- 反馈准备好后，会进入如下图所示反馈界面
-- 这里可以看到原文，示范，信息缺失分析，精简优化表达，话题词汇，以及后续问题
-- 一般口语提高需求可以忽略信息缺失分析部分
-- 后续问题可以拿来生成新的文章，来加深对这一话题的了解
-  
-![演讲页面](assets/feedback.png)
+Additionally, there are practical features that kodee can provide. The theoretical foundation here is that the standard for having learned something is being able to explain it clearly to someone outside the field using concise, precise language. So in the topic editing page, you can explain to kodee, which provides real-time voice transcription. After explaining, you can get corresponding feedback through AI and prompt settings.
 
-  
-## FAQ
-- ...
-- ...
+The original "English learning" function is preserved here - you can take notes in Chinese, explain in English, and get English expression-related feedback, allowing you to improve practical English while mastering knowledge points.
 
-## 后续更新：
+I'd like to elaborate on my understanding of "English learning" - I think English proficiency should be judged by how much actual information you can express in English, and how concise, accurate, and understandable your expression is. From this perspective, vocabulary accumulation and pronunciation are not as important.
 
-- ...
-- ...
-- ...
+## Usage Guide
+After creating an account and logging in, you'll see two pages. One is "create," which is similar to current AI app chat interfaces where you can create new topics.
+
+![create page](assets/create.jpg)
+
+Here you can switch between "no edit" and "optimized with ai." "No edit" saves exactly what you write, while "optimized with ai" uses default prompts or your own prompts to let AI edit and optimize. From my experience, I don't really like having AI make changes.
+
+After creating topics, you can go to the explore interface. The right side of this page shows all your created topics, and the left side shows all created views.
+
+![expore page](assets/explore.jpg)
+
+Let's first look at the editing page after clicking into a topic. This is the main page for topic editing and practice. The size between the three main sections is adjustable. The largest section on the left is the topic editing section, which uses a Notion-like block-styled editing mode. 
+
+Each note can be exported as .md format using the menu button below. The microphone button below starts practice explanation, and real-time transcription appears in the bottom-right section. The tabs in the top-right corner show views containing the current topic, followed by all practice feedback and practice transcription content (transcription only supports English).
+
+![edit page](assets/edit%20page.jpg)
+
+Back to the explore page, you can create views through the plus button in the top-right corner. In this popup, you can search for topics to add, then adjust the hierarchical structure by dragging on the left side. Additionally, in the operation bar of each view on the explore page, there's an export function that can export all topics in that view as a complete .md file according to the custom hierarchy.
+
+![edit page](assets/view.jpg)
+
+## How kodee Became Today's Version
+
+The kodee project has gone through two pivots. These changes happened partly because of my improved skills - I felt capable of building more complex things. Another reason is that as a side project, I still hoped it would be an app I could actually use, which would give me continued motivation to improve it.
+
+kodee initially positioned itself as an auxiliary app specifically for interpreters, but since I'm no longer in that industry, I wasn't clear about interpreters' needs anymore, so it transformed into an academic speaking improvement software.
+
+However, when using the second version of kodee, I found the AI-generated content quality was quite poor - the content was too generic, and I didn't even have the motivation to practice. Forcing myself to learn the content and expressions inside meant I couldn't learn knowledge or practice concise, powerful expression.
+
+So I thought about letting users provide their own practice content, which naturally led to a note-taking function. Combined with the learning patterns I've discovered (as described above) and the speaking practice function from the second version, this became the current latest version of kodee.
+
+I'm already using kodee to learn all the content I encounter now. Problems I encounter while using it will be fixed when I have time, and I'll record the bugs I'm fixing and features I'm writing in this readme.
+
+## Features to be Developed
+- bug fix
+- password reset
